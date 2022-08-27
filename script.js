@@ -1,8 +1,8 @@
 "use strict";
 
 // You selected 4 out of 5
-const ratingContainer = document.getElementById("rating");
-const thankYouContainer = document.getElementById("thank-you");
+const ratingContainer = document.querySelector(".window-rating");
+const thankYouContainer = document.querySelector(".window-thank-you");
 const scores = document.querySelectorAll(".score");
 const textThankYou = document.querySelector(".p-thank-you");
 const button = document.querySelector(".btn");
