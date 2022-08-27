@@ -1,0 +1,194 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: hsl(0, 0%, 100%);
+  margin-top: 1.2rem;
+  padding: 0 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.5rem;
+  color: hsl(217, 12%, 63%);
+  padding: 1.2rem;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 3.2rem;
+  height: 100vh;
+}
+
+.window-rating {
+  display: flex;
+  flex-direction: column;
+
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2.5rem;
+  padding: 1.2rem 1.8rem;
+  background: linear-gradient(hsl(213, 19%, 16%), hsl(213, 19%, 12%));
+}
+
+.icon-container {
+  padding: 3.2rem 1.2rem;
+  position: relative;
+}
+
+.circle-background {
+  padding: 1.6rem 2.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.icon-container svg {
+  position: absolute;
+  left: 2.6rem;
+  top: 3rem;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.score {
+  width: 5rem;
+  height: 5rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+  font-size: 1.6rem;
+
+  cursor: pointer;
+}
+
+.score:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.score:active {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+
+.score--active {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+
+.btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  margin: 1.8rem;
+  padding: 1.4rem;
+  border-radius: 25px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.icon-thank-you {
+  padding-top: 3.2rem;
+}
+
+.window-thank-you {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2.5rem;
+  padding: 1.2rem 1.8rem;
+  background: linear-gradient(hsl(213, 19%, 16%), hsl(213, 19%, 12%));
+}
+
+.p-thank-you {
+  font-size: 1.6rem;
+  margin: 1.8rem 8.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+}
+
+.display-none {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
